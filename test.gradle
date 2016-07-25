@@ -1,0 +1,16 @@
+apply plugin: 'application'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "com.test.ApteligentJavaClientTest"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.fasterxml.jackson.core:jackson-core:+'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:+'
+    compile 'com.fasterxml.jackson.core:jackson-databind:+'
+}
